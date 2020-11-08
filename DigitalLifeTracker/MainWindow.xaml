@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38"/>
+            <RowDefinition Height="38"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="StartTracking"
+                Grid.Row="0" Content="Start"
+                Click="StartTracking_OnClick"/>
+        <Button x:Name="StopTracking"
+                Grid.Row="1" Content="Stop"
+                Click="StopTracking_OnClick"/>
+        <TextBox x:Name="LogBox"
+                 Grid.Row="2"
+                 Margin="3"
+                 FontSize="10"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Window>
